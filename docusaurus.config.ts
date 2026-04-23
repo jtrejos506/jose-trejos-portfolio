@@ -3,6 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
+  plugins: ["./src/plugins/tailwind-config.js"],
+
   title: 'Jose Trejos',
   tagline: 'I build reliable and scalable web applications',
   favicon: 'img/favicon.ico',
@@ -46,7 +48,9 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+
         },
+      
       } satisfies Preset.Options,
     ],
   ],
@@ -112,6 +116,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    
   } satisfies Preset.ThemeConfig,
 };
 
