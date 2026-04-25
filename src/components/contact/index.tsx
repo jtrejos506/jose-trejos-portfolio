@@ -1,4 +1,5 @@
 import Link from "@docusaurus/Link";
+import { EMAIL, URL_GITHUB, URL_LINKEDIN } from "@site/src/utils/constants";
 
 export default function Contact() {
   return (
@@ -20,7 +21,7 @@ export default function Contact() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
-                href="mailto:jtrejos506@gmail.com"
+                href={`mailto:${EMAIL}`}
                 className="inline-flex items-center gap-2 rounded-full bg-violet-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-violet-500 hover:shadow-xl hover:shadow-violet-500/25"
               >
                 <svg
@@ -39,7 +40,7 @@ export default function Contact() {
                 jtrejos506@gmail.com
               </Link>
               <Link
-                href="https://github.com/jtrejos506"
+                href={URL_GITHUB}
                 className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-transparent px-8 py-3.5 text-sm font-semibold text-white transition-all hover:border-slate-400 hover:bg-white/5"
               >
                 <svg
@@ -52,7 +53,7 @@ export default function Contact() {
                 GitHub
               </Link>
               <Link
-                href="https://www.linkedin.com/in/jose-506/"
+                href={URL_LINKEDIN}
                 className="inline-flex items-center gap-2 rounded-full border border-slate-600 bg-transparent px-8 py-3.5 text-sm font-semibold text-white transition-all hover:border-slate-400 hover:bg-white/5"
               >
                 <svg

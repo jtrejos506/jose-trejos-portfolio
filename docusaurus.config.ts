@@ -1,111 +1,103 @@
-import { themes as prismThemes } from 'prism-react-renderer';
-import type { Config } from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
+import { EMAIL, URL_GITHUB, URL_LINKEDIN } from "./src/utils/constants";
 
 const config: Config = {
   plugins: ["./src/plugins/tailwind-config.js"],
 
-  title: 'Jose Trejos',
-  tagline: 'I build reliable and scalable web applications',
-  favicon: 'img/favicon.ico',
+  title: "Jose Trejos",
+  tagline: "I build reliable and scalable web applications",
+  favicon: "img/favicon.ico",
 
   future: {
     v4: true,
   },
 
-  url: 'https://josetrejos.com',
-  baseUrl: '/',
+  url: "https://josetrejos.com",
+  baseUrl: "/",
 
-  organizationName: 'jtrejos506',
-  projectName: 'jose-trejos-portfolio',
+  organizationName: "jtrejos506",
+  projectName: "jose-trejos-portfolio",
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          routeBasePath: '/projects', // 🔥 IMPORTANT: makes docs = projects
-          editUrl: 'https://github.com/jtrejos506/jose-trejos-portfolio',
+          sidebarPath: "./sidebars.ts",
+          routeBasePath: "/projects",
+          editUrl: "https://github.com/jtrejos506/jose-trejos-portfolio",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
-          editUrl: 'https://github.com/jtrejos506/jose-trejos-portfolio',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          editUrl: "https://github.com/jtrejos506/jose-trejos-portfolio",
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
-
+          customCss: "./src/css/custom.css",
         },
-      
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    image: 'img/social-card.jpg',
-
-    colorMode: {
-      respectPrefersColorScheme: true,
-    },
+    image: "img/social-card.jpg",
 
     navbar: {
-      title: 'Jose Trejos',
-      logo: {
-        alt: 'Jose Trejos Logo',
-        src: 'img/logo.svg',
-      },
+      title: "◀ Back",
       items: [
         {
-          to: '/projects/intro',
-          label: 'Projects',
-          position: 'right',
+          to: "/projects/intro",
+          label: "Projects",
+          position: "right",
         },
         {
-          to: '/blog',
-          label: 'Blog',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/jtrejos506',
-          label: 'GitHub',
-          position: 'right',
+          to: "/blog",
+          label: "Blog",
+          position: "right",
         },
       ],
     },
 
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Content',
+          title: "Content",
           items: [
-            { label: 'Projects', to: '/projects' },
-            { label: 'Blog', to: '/blog' },
+            { label: "Projects", to: "/projects" },
+            { label: "Blog", to: "/blog" },
           ],
         },
         {
-          title: 'Contact',
+          title: "Contact",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/jtrejos506',
+              label: "jtrejos506@gmail.com",
+              href: `mailto:${EMAIL}`,
             },
-            // later you can add:
-            // { label: 'Upwork', href: 'your-upwork-link' },
+            {
+              label: "LinkedIn",
+              href: URL_LINKEDIN,
+            },
+            {
+              label: "GitHub",
+              href: URL_GITHUB,
+            },
           ],
         },
       ],
@@ -116,7 +108,6 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    
   } satisfies Preset.ThemeConfig,
 };
 

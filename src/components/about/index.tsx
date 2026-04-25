@@ -1,5 +1,6 @@
 import { CodeIcon, GitHubIcon, LinkedInIcon } from "@site/src/utils/icons";
 import Link from "@docusaurus/Link";
+import { URL_GITHUB, URL_LINKEDIN } from "@site/src/utils/constants";
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
               <div className="w-full h-full rounded-xl bg-linear-to-br from-violet-500 to-indigo-600 flex items-center justify-center">
                 <img
                   src={require("@site/static/img/jose-trejos.jpeg").default}
-                  alt="My Image"
+                  alt="Jose Trejos Image"
                 />
               </div>
             </div>
@@ -45,14 +46,14 @@ export default function About() {
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-                href="https://github.com/jtrejos506"
+                href={URL_GITHUB}
                 className="flex items-center gap-2 text-slate-600 hover:text-violet-600 transition-colors"
               >
                 <GitHubIcon />
                 <span>GitHub</span>
               </Link>
               <Link
-                href="https://www.linkedin.com/in/jose-506/"
+                href={URL_LINKEDIN}
                 className="flex items-center gap-2 text-slate-600 hover:text-violet-600 transition-colors"
               >
                 <LinkedInIcon />
