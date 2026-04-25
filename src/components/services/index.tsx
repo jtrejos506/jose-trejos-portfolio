@@ -86,7 +86,7 @@ export default function Services() {
     <section id="services" className="bg-slate-50 px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-indigo-600">
+          <span className="text-sm font-semibold uppercase tracking-widest text-violet-600">
             Services
           </span>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
@@ -104,7 +104,7 @@ export default function Services() {
               key={service.title}
               className="group rounded-2xl border border-slate-200 bg-white p-8 transition-all hover:border-indigo-200 hover:shadow-xl hover:shadow-indigo-50"
             >
-              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600 transition-colors group-hover:bg-indigo-600 group-hover:text-white">
+              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100 text-violet-700 transition-colors group-hover:bg-violet-600 group-hover:text-white">
                 {service.icon}
               </div>
               <h3 className="text-lg font-semibold text-slate-900">
