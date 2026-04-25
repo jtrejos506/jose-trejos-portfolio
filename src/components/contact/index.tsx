@@ -4,9 +4,9 @@ export default function Contact() {
   return (
     <section id="contact" className="bg-white px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-4xl">
-        <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 p-8 sm:p-12 lg:p-16">
+        <div className="overflow-hidden rounded-3xl bg-linear-to-br from-slate-900 via-slate-800 to-violet-950 p-8 sm:p-12 lg:p-16">
           <div className="text-center">
-            <span className="inline-block rounded-full border border-indigo-400/30 bg-indigo-500/10 px-4 py-1.5 text-sm font-medium text-indigo-300">
+            <span className="inline-block rounded-full border border-violet-400/30 bg-violet-500/10 px-4 py-1.5 text-sm font-medium text-violet-300">
               Let&rsquo;s Work Together
             </span>
             <h2 className="mt-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -21,7 +21,7 @@ export default function Contact() {
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="mailto:jtrejos506@gmail.com"
-                className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-indigo-500 hover:shadow-xl hover:shadow-indigo-500/25"
+                className="inline-flex items-center gap-2 rounded-full bg-violet-600 px-8 py-3.5 text-sm font-semibold text-white transition-all hover:bg-violet-500 hover:shadow-xl hover:shadow-violet-500/25"
               >
                 <svg
                   className="h-4 w-4"
