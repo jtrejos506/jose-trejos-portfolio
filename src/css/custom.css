@@ -1,23 +1,47 @@
-@import "tailwindcss";
-/* @source "..*.{js,jsx,ts,tsx,md,mdx}"; */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
 
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global css
  */
-
- html {
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply antialiased text-slate-800;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-violet-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-violet-500;
+}
+
+/* Animation for skill bars */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+}
+
+.skill-bar-fill {
+  animation: fillBar 1.5s ease-out forwards;
 }
 
 
-/* You can override the default Infima variables here. */
+/* default Infima variables. */
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -30,7 +54,6 @@ body {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
