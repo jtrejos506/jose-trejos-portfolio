@@ -70,7 +70,7 @@ const config: Config = {
       },
       items: [
         {
-          to: '/projects',
+          to: '/projects/intro',
           label: 'Projects',
           position: 'right',
         },

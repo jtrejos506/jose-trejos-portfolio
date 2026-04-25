@@ -1,6 +1,8 @@
 import { ExternalLinkIcon, GitHubIcon } from "@site/src/utils/icons";
+import Link from "@docusaurus/Link";
 
 export default function Projects() {
+  // TODO: add projects
   const projects = [
     {
       title: "Project 1",
@@ -11,6 +13,7 @@ export default function Projects() {
       tags: ["tool-1", "tool-2", "tool-3", "tool-4"],
       github: "#",
       live: "#",
+      projectUrl: "projects/category/project-a",
     },
     {
       title: "Project 2",
@@ -21,6 +24,7 @@ export default function Projects() {
       tags: ["tool-1", "tool-2", "tool-3", "tool-4"],
       github: "#",
       live: "#",
+      projectUrl: "projects/category/project-a",
     },
     {
       title: "Project 3",
@@ -31,6 +35,7 @@ export default function Projects() {
       tags: ["tool-1", "tool-2", "tool-3", "tool-4"],
       github: "#",
       live: "#",
+      projectUrl: "projects/category/project-a",
     },
   ];
 
@@ -60,10 +65,12 @@ export default function Projects() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-slate-600 mb-4">{project.description}</p>
+                <Link href={project.projectUrl}>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-slate-600 mb-4">{project.description}</p>
+                </Link>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span
@@ -75,20 +82,20 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a
+                  <Link
                     href={project.github}
                     className="flex items-center gap-2 text-slate-600 hover:text-violet-600 transition-colors"
                   >
                     <GitHubIcon />
                     <span>Code</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={project.live}
                     className="flex items-center gap-2 text-slate-600 hover:text-violet-600 transition-colors"
                   >
                     <ExternalLinkIcon />
                     <span>Live Demo</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -96,8 +103,8 @@ export default function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="#"
+          <Link
+            href="/projects/intro"
             className="inline-flex items-center gap-2 text-violet-600 font-semibold hover:text-violet-700 transition-colors"
           >
             View All Projects
@@ -114,7 +121,7 @@ export default function Projects() {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
