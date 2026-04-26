@@ -16,9 +16,11 @@ const config: Config = {
 
   url: "https://josetrejos.com",
   baseUrl: "/",
+  trailingSlash: false,
 
   organizationName: "jtrejos506",
   projectName: "jose-trejos-portfolio",
+  deploymentBranch: "gh-pages",
 
   onBrokenLinks: "throw",
 
