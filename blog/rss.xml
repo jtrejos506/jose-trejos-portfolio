@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Jose Trejos Blog</title>
+        <link>https://josetrejos.com/blog</link>
+        <description>Jose Trejos Blog</description>
+        <lastBuildDate>Thu, 12 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Building My Portfolio]]></title>
+            <link>https://josetrejos.com/blog/building-my-portfolio</link>
+            <guid>https://josetrejos.com/blog/building-my-portfolio</guid>
+            <pubDate>Thu, 12 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[This site started as a simple idea: document what I know. It’s evolving into something more useful, a structured portfolio that reflects how I approach real problems in DevOps, Linux, and observability.]]></description>
+            <content:encoded><![CDATA[<p>This site started as a simple idea: document what I know. It’s evolving into something more useful, a structured portfolio that reflects how I approach real problems in DevOps, Linux, and observability.</p>
+<p>Instead of treating this as a traditional blog, I’m combining two things:</p>
+<ul>
+<li class="">Projects (Docs): Clear, structured case studies of what I’ve built</li>
+<li class="">Blog: Short posts focused on lessons, decisions, and learning along the way</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-this-approach">Why this approach?<a href="https://josetrejos.com/blog/building-my-portfolio#why-this-approach" class="hash-link" aria-label="Direct link to Why this approach?" title="Direct link to Why this approach?" translate="no">​</a></h2>
+<p>In many portfolios, projects exist without context, and blogs exist without proof of execution. I want both:</p>
+<ul>
+<li class="">Show what I built</li>
+<li class="">Explain how I think</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-you-can-expect">What you can expect<a href="https://josetrejos.com/blog/building-my-portfolio#what-you-can-expect" class="hash-link" aria-label="Direct link to What you can expect" title="Direct link to What you can expect" translate="no">​</a></h2>
+<p>Going forward, I’ll be sharing:</p>
+<ul>
+<li class="">Practical implementations (Linux, automation, etc)</li>
+<li class="">Troubleshooting scenarios and solutions</li>
+<li class="">Small experiments and lab setups</li>
+<li class="">Lessons learned from real or simulated projects</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-note-on-client-work">A note on client work<a href="https://josetrejos.com/blog/building-my-portfolio#a-note-on-client-work" class="hash-link" aria-label="Direct link to A note on client work" title="Direct link to A note on client work" translate="no">​</a></h2>
+<p>Some projects are based on real-world experience but are anonymized to respect confidentiality. The focus is always on the technical challenge and solution.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-next">What’s next<a href="https://josetrejos.com/blog/building-my-portfolio#whats-next" class="hash-link" aria-label="Direct link to What’s next" title="Direct link to What’s next" translate="no">​</a></h2>
+<p>The next posts will dive into:</p>
+<ul>
+<li class="">Building a basic logging pipeline</li>
+<li class="">Structuring a clean project case study</li>
+<li class="">Setting up reproducible DevOps labs</li>
+</ul>
+<hr>
+<p>This is a work in progress—but that’s the point.</p>]]></content:encoded>
+            <category>Learning</category>
+        </item>
+    </channel>
+</rss>

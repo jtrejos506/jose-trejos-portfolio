@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjose_trejos_portfolio=self.webpackChunkjose_trejos_portfolio||[]).push([["431"],{9328(o){o.exports=JSON.parse('{"metadata":{"permalink":"/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

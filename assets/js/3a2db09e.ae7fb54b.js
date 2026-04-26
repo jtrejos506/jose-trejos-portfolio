@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjose_trejos_portfolio=self.webpackChunkjose_trejos_portfolio||[]).push([["186"],{8070(e){e.exports=JSON.parse('{"tags":[{"label":"Learning","permalink":"/blog/tags/learning","description":"Notes, lessons, and knowledge gained.","count":1}]}')}}]);

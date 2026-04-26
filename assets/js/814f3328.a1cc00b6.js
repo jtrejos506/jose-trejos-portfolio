@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjose_trejos_portfolio=self.webpackChunkjose_trejos_portfolio||[]).push([["833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Building My Portfolio","permalink":"/blog/building-my-portfolio","unlisted":false,"date":"2026-03-12T00:00:00.000Z"}]}')}}]);
