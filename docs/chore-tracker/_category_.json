@@ -1,0 +1,8 @@
+{
+  "label": "Chore Tracker",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "The Chore Tracter is a tool to measures the total time it takes to complete a list of chores."
+  }
+}

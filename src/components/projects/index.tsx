@@ -1,41 +1,55 @@
 import { ExternalLinkIcon, GitHubIcon } from "@site/src/utils/icons";
 import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import { TOOLS } from "@site/src/utils/constants";
 
 export default function Projects() {
-  // TODO: add projects
+  const {
+    AWS,
+    CSS,
+    EXPRESS,
+    HTML,
+    MONGODB,
+    NODE,
+    POSTGRESQL,
+    REACT,
+    TAILWIND,
+    TYPESCRIPT,
+  } = TOOLS;
+
   const projects = [
     {
-      title: "Project 1",
+      title: "QR code generator",
       description:
-        "Lorem ipsum dolor sit amet consectetur eum, fugit quia ab, ex nostrum quasi consectetur id!",
-      image:
-        "https://raw.githubusercontent.com/jose-506/ChoreTracker/main/src/client/src/assets/allCardsDark.png",
-      tags: ["tool-1", "tool-2", "tool-3", "tool-4"],
+        "Create QR codes instantly from any URL. This tool is lightweight, fast, and fully client-side and no external API is required.",
+      image: useBaseUrl("/img/qr-code-generator.png"),
+      tags: [REACT, TAILWIND, HTML],
+      // todo; update gitghub link
       github: "#",
-      live: "#",
-      projectUrl: "projects/category/project-a",
+      live: "projects/tools/qr-generator#-live-demo",
+      projectUrl: "projects/tools/qr-generator",
+    },
+
+    {
+      title: "Link Obfuscator",
+      description:
+        "A client-side Link Obfuscator, designed to generate shareable redirect links without requiring any backend infrastructure.",
+      image: useBaseUrl("/img/link-obfuscator.png"),
+      tags: [REACT, TYPESCRIPT, TAILWIND],
+      github: "#",
+      live: "projects/tools/link-obfuscator#live-demo",
+      projectUrl: "projects/tools/link-obfuscator",
     },
     {
-      title: "Project 2",
+      title: "Chore Tracker",
       description:
-        "Lorem ipsum dolor sit amet consectetur eum, fugit quia ab, ex nostrum quasi consectetur id!",
-      image:
-        "https://raw.githubusercontent.com/jose-506/ChoreTracker/main/src/client/src/assets/chartLightMode1.png",
-      tags: ["tool-1", "tool-2", "tool-3", "tool-4"],
-      github: "#",
-      live: "#",
-      projectUrl: "projects/category/project-a",
-    },
-    {
-      title: "Project 3",
-      description:
-        "Lorem ipsum dolor sit amet consectetur eum, fugit quia ab, ex nostrum quasi consectetur id!",
+        "A tool to measures the total time it takes to complete a list of chores.",
       image:
         "https://raw.githubusercontent.com/jose-506/ChoreTracker/main/src/client/src/assets/allCardsDark.png",
-      tags: ["tool-1", "tool-2", "tool-3", "tool-4"],
-      github: "#",
-      live: "#",
-      projectUrl: "projects/category/project-a",
+      tags: [NODE, REACT, MONGODB, EXPRESS, AWS],
+      github: "https://github.com/jtrejos506/ChoreTracker",
+      live: "http://ec2-54-226-183-237.compute-1.amazonaws.com/",
+      projectUrl: "projects/category/chore-tracker",
     },
   ];
 
@@ -43,9 +57,7 @@ export default function Projects() {
     <section id="projects" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">
-            Featured Projects
-          </h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Projects</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             Some of my recent work that showcases my skills and experience.
           </p>
@@ -58,11 +70,13 @@ export default function Projects() {
               className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all"
             >
               <div className="aspect-video bg-slate-100 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                <Link href={project.projectUrl}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </Link>
               </div>
               <div className="p-6">
                 <Link href={project.projectUrl}>

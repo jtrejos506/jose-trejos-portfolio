@@ -1,0 +1,71 @@
+---
+title: QR Code Generator
+description: Generate QR codes instantly from any URL using a lightweight React component.
+---
+
+import QRGenerator from "@site/src/components/qr-code-generator";
+
+# QR Code Generator
+
+Create QR codes instantly from any URL. This tool is lightweight, fast, and fully client-side—no external API required.
+
+---
+
+## Features
+
+- ⚡ **Instant generation** — no page reloads
+- 🔒 **Client-side only** — your data never leaves the browser
+- 🎯 **Simple interface** — just paste and generate
+- 🧩 **Reusable component** — easily integrate into other projects
+
+---
+
+## Live Demo
+
+Try it below:
+
+<div
+
+style={{
+    padding: "2rem",
+    borderRadius: "1.5rem",
+    background: "linear-gradient(135deg, #7c3aed, #6366f1)",
+    boxShadow: "0 20px 50px rgba(0,0,0,0.25)",
+}}
+
+>
+
+<QRGenerator />
+</div>
+
+---
+
+## How It Works
+
+This generator uses a lightweight QR library to convert a URL into a base64 image rendered directly in the browser.
+
+**Basic flow:**
+
+1. User inputs a valid URL
+2. Form submission triggers generation
+3. QR code is converted into an image (`data URL`)
+4. Image is rendered instantly on screen
+
+---
+
+## Usage Example
+
+You can reuse this component anywhere in your project:
+
+```jsx
+import QRGenerator from "@site/src/components/qr-code-generator";
+
+export default function Page() {
+  return (
+    <div>
+      <h1>Generate a QR Code</h1>
+      <QRGenerator />
+    </div>
+  );
+}
+```

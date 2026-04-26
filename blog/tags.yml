@@ -1,19 +1,74 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+devops:
+  label: DevOps
+  permalink: /devops
+  description: Practices and tools for automation, CI/CD, and infrastructure.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linux systems, administration, and troubleshooting.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+observability:
+  label: Observability
+  permalink: /observability
+  description: Logging, metrics, and tracing strategies.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+automation:
+  label: Automation
+  permalink: /automation
+  description: Scripts and tools to automate workflows and infrastructure.
+
+bash:
+  label: Bash
+  permalink: /bash
+  description: Shell scripting and command-line techniques.
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Containerization and Docker-based workflows.
+
+ci-cd:
+  label: CI/CD
+  permalink: /ci-cd
+  description: Continuous integration and deployment pipelines.
+
+troubleshooting:
+  label: Troubleshooting
+  permalink: /troubleshooting
+  description: Debugging systems and resolving issues.
+
+projects:
+  label: Projects
+  permalink: /projects
+  description: Practical implementations and hands-on builds.
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Step-by-step guides and how-tos.
+
+learning:
+  label: Learning
+  permalink: /learning
+  description: Notes, lessons, and knowledge gained.
+
+performance:
+  label: Performance
+  permalink: /performance
+  description: Optimization and system performance improvements.
+
+networking:
+  label: Networking
+  permalink: /networking
+  description: Network configuration, debugging, and concepts.
+
+security:
+  label: Security
+  permalink: /security
+  description: System hardening and security practices.
+
+case-study:
+  label: Case Study
+  permalink: /case-study
+  description: Real-world problems and solutions.
