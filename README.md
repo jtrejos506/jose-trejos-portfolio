@@ -1,41 +1,40 @@
-# Website
+# Building My Portfolio: From Docs to Real-World Projects
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This site started as a simple idea: document what I know. It’s evolving into something more useful, a structured portfolio that reflects how I approach real problems in DevOps, Linux, and observability.
 
-## Installation
+Instead of treating this as a traditional blog, I’m combining two things:
 
-```bash
-yarn
-```
+- Projects (Docs): Clear, structured case studies of what I’ve built
+- Blog: Short posts focused on lessons, decisions, and learning along the way
 
-## Local Development
+## Why this approach?
 
-```bash
-yarn start
-```
+In many portfolios, projects exist without context, and blogs exist without proof of execution. I want both:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- Show what I built
+- Explain how I think
 
-## Build
+## What you can expect
 
-```bash
-yarn build
-```
+Going forward, I’ll be sharing:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- Practical implementations (Linux, automation, etc)
+- Troubleshooting scenarios and solutions
+- Small experiments and lab setups
+- Lessons learned from real or simulated projects
 
-## Deployment
+## A note on client work
 
-Using SSH:
+Some projects are based on real-world experience but are anonymized to respect confidentiality. The focus is always on the technical challenge and solution.
 
-```bash
-USE_SSH=true yarn deploy
-```
+## What’s next
 
-Not using SSH:
+The next posts will dive into:
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+- Building a basic logging pipeline
+- Structuring a clean project case study
+- Setting up reproducible DevOps labs
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+---
+
+This is a work in progress—but that’s the point.

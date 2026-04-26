@@ -60,7 +60,7 @@ const config: Config = {
     image: "img/social-card.jpg",
 
     navbar: {
-      title: "◀ Back",
+      title: "Home",
       items: [
         {
           to: "/projects/intro",
