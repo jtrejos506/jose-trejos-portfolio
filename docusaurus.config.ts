@@ -81,7 +81,7 @@ const config: Config = {
         {
           title: "Content",
           items: [
-            { label: "Projects", to: "/projects" },
+            { label: "Projects", to: "/projects/intro" },
             { label: "Blog", to: "/blog" },
           ],
         },
