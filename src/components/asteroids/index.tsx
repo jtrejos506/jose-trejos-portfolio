@@ -16,7 +16,12 @@ export default function AsteroidsGame() {
     highScore: 0,
   });
 
+  const [hasStarted, setHasStarted] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
+
+  const handleStart = () => {
+    setHasStarted(true);
+  };
 
   const handlePause = () => {
     if (!gameRef.current) return;
@@ -33,6 +38,7 @@ export default function AsteroidsGame() {
   };
 
   useEffect(() => {
+    if (!hasStarted) return;
     if (!canvasRef.current) return;
 
     const game = new Game(canvasRef.current, setState);
@@ -80,8 +86,9 @@ export default function AsteroidsGame() {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("keyup", handleKeyUp);
       game.destroy();
+      gameRef.current = null;
     };
-  }, []);
+  }, [hasStarted]);
 
   return (
     <div style={{ position: "relative", width: "760px", margin: "0 auto" }}>
@@ -89,19 +96,36 @@ export default function AsteroidsGame() {
         ref={canvasRef}
         width={760}
         height={570}
-        style={{ border: "1px solid #333", display: "block" }}
+        style={{
+          border: "1px solid #333",
+          display: "block",
+          background: "black",
+        }}
       />
 
-      <AsteroidsHUD
-        state={state}
-        onPause={handlePause}
-        onRestart={handleRestart}
-        isPaused={isPaused}
-      />
+      {hasStarted && (
+        <AsteroidsHUD
+          state={state}
+          onPause={handlePause}
+          onRestart={handleRestart}
+          isPaused={isPaused}
+        />
+      )}
+
+      {!hasStarted && (
+        <div style={overlayStyle}>
+          <div style={startCardStyle}>
+            <div style={titleStyle}>Asteroids</div>
+            <button onClick={handleStart} style={buttonStyle}>
+              Start Game
+            </button>
+          </div>
+        </div>
+      )}
 
       {isPaused && <div style={overlayStyle}>⏸ Paused</div>}
 
-      {state.isGameOver && (
+      {hasStarted && state.isGameOver && (
         <GameOverModal score={state.score} onRestart={handleRestart} />
       )}
     </div>
@@ -118,4 +142,30 @@ const overlayStyle: React.CSSProperties = {
   background: "rgba(0,0,0,0.7)",
   padding: "20px 40px",
   borderRadius: "10px",
+};
+
+const startCardStyle: React.CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: "16px",
+  background: "rgba(0,0,0,0.82)",
+  padding: "28px 36px",
+  borderRadius: "12px",
+  border: "1px solid #444",
+};
+
+const titleStyle: React.CSSProperties = {
+  color: "white",
+  fontSize: "32px",
+  fontFamily: "monospace",
+};
+
+const buttonStyle: React.CSSProperties = {
+  background: "#111",
+  color: "white",
+  border: "1px solid #666",
+  padding: "10px 20px",
+  cursor: "pointer",
+  fontSize: "16px",
 };
