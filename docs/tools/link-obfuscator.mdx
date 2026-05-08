@@ -7,58 +7,42 @@ import LinkObfuscator from "@site/src/components/link-obfuscator";
 
 # Link Obfuscator
 
+Generate concise, shareable redirect links entirely in the browser.
+
 ## Live Demo
 
-Try it below:
-
-<div>
-  <LinkObfuscator />
-</div>
-
----
-
-🔗 Link Obfuscator Tool
-
-A lightweight, client-side Link Obfuscator built with TypeScript and React, designed to generate clean, shareable redirect links without requiring any backend infrastructure.
+<LinkObfuscator />
 
 ## Overview
 
-This tool transforms long or complex URLs into compact, encoded links that can be safely shared across browsers and devices. It leverages browser-native encoding techniques to wrap the original URL into a redirect-friendly format, making it ideal for frontend-only environments such as static sites.
-
-Built to run seamlessly within a Docusaurus project, this component demonstrates how modern web applications can deliver useful functionality without relying on servers, databases, or third-party APIs.
+The component encodes user‑supplied URLs into short, hash‑based links that redirect to the original destination. It is fully client‑side and integrates easily into static sites.
 
 ## Key Features
 
-- Fully Client-Side
-  No backend, database, or external services required. Runs entirely in the browser.
-- Shareable Redirect Links
-  Generated links work across devices and browsers using encoded URL fragments.
-- TypeScript Implementation
-  Strong typing ensures maintainability, scalability, and code reliability.
-- Lightweight & Fast
-  Zero network overhead beyond the final redirect.
-- Seamless Integration
-  Designed to integrate cleanly into static sites and documentation platforms.
-- Minimalist UI
-  Clean, user-friendly interface aligned with modern design practices.
+- Fully client‑side; no backend required.
+- Generates hash‑based redirect links.
+- Implemented in TypeScript for type safety.
+- Lightweight and fast.
+- Seamless integration with static sites.
+- Minimalist UI.
 
 ## How It Works
 
-1. The user inputs a long URL.
-2. The application encodes the URL using a safe client-side method.
-3. A new link is generated using a hash-based routing approach.
-4. When accessed, the redirect page decodes the URL and navigates the user to the original destination.
+1. Input a long URL.
+2. Encode it client‑side.
+3. Generate a hash‑based redirect link.
+4. On visit, decode and navigate to the original URL.
 
 ## Use Cases
 
-- Sharing cleaner links in documentation or demos
-- Masking complex query parameters for better readability
-- Frontend-only projects requiring redirect functionality
-- Educational or prototype environments without backend support
+- Documentation or demo link cleanup.
+- Masking complex query parameters.
+- Frontend‑only redirect functionality.
+- Prototype or educational projects.
 
 ## Important Notes
 
-This tool performs encoding, not encryption. The original URL can be decoded by anyone with basic technical knowledge. It is not intended for securing sensitive information, but rather for improving usability and presentation.
+The tool encodes URLs; it does not encrypt them. Sensitive data should not be shared.
 
 ## Tech Stack
 
@@ -66,7 +50,3 @@ This tool performs encoding, not encryption. The original URL can be decoded by 
 - TypeScript
 - Docusaurus (static site integration)
 - Tailwind CSS (UI styling)
-
-## Value Proposition
-
-This project showcases the ability to design and implement practical, user-facing tools using a frontend-only architecture. It highlights performance optimization, clean UI design, and thoughtful handling of browser capabilities—key considerations for modern web development.
