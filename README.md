@@ -1,10 +1,10 @@
 # Building My Portfolio: From Docs to Real-World Projects
 
-This site started as a simple idea: document what I know. It’s evolving into something more useful, a structured portfolio that reflects how I approach real problems in DevOps, Linux, and observability.
+This site started as a simple idea: document what I know. It’s evolving into something more useful—a structured portfolio that reflects how I approach real problems in software development, DevOps and GNU/Linux.
 
 Instead of treating this as a traditional blog, I’m combining two things:
 
-- Projects (Docs): Clear, structured case studies of what I’ve built
+- Projects: Clear, structured case studies of what I’ve built
 - Blog: Short posts focused on lessons, decisions, and learning along the way
 
 ## Why this approach?
@@ -18,23 +18,11 @@ In many portfolios, projects exist without context, and blogs exist without proo
 
 Going forward, I’ll be sharing:
 
-- Practical implementations (Linux, automation, etc)
-- Troubleshooting scenarios and solutions
-- Small experiments and lab setups
-- Lessons learned from real or simulated projects
+‑ Practical implementations (Linux, automation, etc.)
+‑ Troubleshooting scenarios and solutions
+‑ Small experiments and lab setups
+‑ Lessons learned from real or simulated projects
 
 ## A note on client work
 
 Some projects are based on real-world experience but are anonymized to respect confidentiality. The focus is always on the technical challenge and solution.
-
-## What’s next
-
-The next posts will dive into:
-
-- Building a basic logging pipeline
-- Structuring a clean project case study
-- Setting up reproducible DevOps labs
-
----
-
-This is a work in progress—but that’s the point.
