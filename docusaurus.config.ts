@@ -36,7 +36,8 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/projects",
-          editUrl: "https://github.com/jtrejos506/jose-trejos-portfolio",
+          editUrl:
+            "https://github.com/jtrejos506/jose-trejos-portfolio/blob/main",
         },
         blog: {
           showReadingTime: true,
@@ -44,7 +45,8 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          editUrl: "https://github.com/jtrejos506/jose-trejos-portfolio",
+          editUrl:
+            "https://github.com/jtrejos506/jose-trejos-portfolio/blob/main",
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
@@ -63,13 +65,13 @@ const config: Config = {
       title: "Home",
       items: [
         {
-          to: "/projects/intro",
-          label: "Projects",
+          to: "/blog",
+          label: "Blog",
           position: "right",
         },
         {
-          to: "/blog",
-          label: "Blog",
+          to: "/projects/intro",
+          label: "Projects",
           position: "right",
         },
       ],
